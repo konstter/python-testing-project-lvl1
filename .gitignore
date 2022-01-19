@@ -1,4 +1,4 @@
-test/__pycache__
+tests/__pycache__
 __pycache__
 pyproject.toml
 poetry.lock
