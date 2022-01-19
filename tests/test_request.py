@@ -1,19 +1,5 @@
-import pytest
-import requests
-import requests_mock
 import os
-import tempfile
 from page_loader import download
-
-
-@pytest.fixture
-def test_mock(requests_mock):
-    return requests_mock.get('http://test.com', text='data')
-
-
-@pytest.fixture
-def test_dir():
-    return tempfile.TemporaryDirectory()
 
 
 def test_download_create(test_mock, test_dir):

@@ -1,5 +1,3 @@
-
-import pytest
 from page_loader import get_filename
 
 def test_get_filename():
