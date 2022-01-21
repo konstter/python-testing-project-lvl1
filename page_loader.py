@@ -1,5 +1,10 @@
+#!/usr/bin/python3
+
+from ast import arg
 import os
 import requests
+import argparse
+
 
 def get_filename(u):
     filename = ''
@@ -11,7 +16,8 @@ def get_filename(u):
             filename += '-'
     return filename + '.html'
 
-def download(u, p = os.getcwd()):
+
+def download(u, p):
     response = requests.get(u)
     f_name = get_filename(u)
     res_path = os.path.join(p, f_name)
@@ -21,8 +27,18 @@ def download(u, p = os.getcwd()):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-o', '--output', help='A directory to download a webpage')
+    parser.add_argument('-w', '--webpage', help='A webpage to download')
+    args = parser.parse_args()
     url = 'https://ru.hexlet.io/courses'
-    # file_path = '/var/tmp'
-    print(download(url))
+    path = os.getcwd()
+
+    if args.output:
+        path =  args.output
+    if args.webpage:
+        url = args.webpage
+    
+    print(download(url, path))
 
 
