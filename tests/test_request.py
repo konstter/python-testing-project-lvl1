@@ -1,5 +1,5 @@
 import os
-from page_loader import download
+from scripts.page_loader import download
 
 
 def test_download_create(test_mock, test_dir):

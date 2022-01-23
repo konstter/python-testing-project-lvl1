@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 from ast import arg
 import os
@@ -26,7 +26,7 @@ def download(u, p):
     return res_path
 
 
-if __name__ == '__main__':
+def driver():
     parser = argparse.ArgumentParser()
     parser.add_argument('-o', '--output', help='A directory to download a webpage')
     parser.add_argument('-w', '--webpage', help='A webpage to download')
@@ -40,5 +40,11 @@ if __name__ == '__main__':
         url = args.webpage
     
     print(download(url, path))
+
+
+if __name__ == '__main__':
+    
+    driver()
+    
 
 
