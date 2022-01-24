@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from ast import arg
+#from ast import arg
 import os
 import requests
 import argparse
@@ -26,14 +26,18 @@ def download(u, p):
     return res_path
 
 
-def driver():
+def create_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('-o', '--output', help='A directory to download a webpage')
     parser.add_argument('-w', '--webpage', help='A webpage to download')
-    args = parser.parse_args()
+    return parser
+
+
+def driver():
+    args = create_parser().parse_args()
     url = 'https://ru.hexlet.io/courses'
     path = os.getcwd()
-
+    
     if args.output:
         path =  args.output
     if args.webpage:
@@ -43,7 +47,7 @@ def driver():
 
 
 if __name__ == '__main__':
-    
+
     driver()
     
 
