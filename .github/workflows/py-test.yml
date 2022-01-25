@@ -3,7 +3,6 @@ on: [push]
 jobs:
   run:
     runs-on: ubuntu-latest
-    strategy:
     env:
       OS: ubuntu-latest
       PYTHON: '3.10'
