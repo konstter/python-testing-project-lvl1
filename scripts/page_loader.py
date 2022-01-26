@@ -6,6 +6,9 @@ import argparse
 
 
 def get_filename(u):
+    '''
+    Create filename from url
+    '''
     filename = ''
     split_list = u.split('//')
     for character in split_list[1]:
