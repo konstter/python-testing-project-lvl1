@@ -3,4 +3,4 @@
 
 [![codecov](https://codecov.io/gh/konstter/python-testing-project-lvl1/branch/main/graph/badge.svg?token=0MKQGZTTJB)](https://codecov.io/gh/konstter/python-testing-project-lvl1)
 
-[![Lint](https://github.com/konstter/python-testing-project-lvl1/actions/workflows/lint.yml/badge.svg)](https://github.com/konstter/python-testing-project-lvl1/actions/workflows/lint.yml)
+[![flake8](https://github.com/konstter/python-testing-project-lvl1/actions/workflows/lint.yml/badge.svg)](https://github.com/konstter/python-testing-project-lvl1/actions/workflows/lint.yml)
