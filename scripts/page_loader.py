@@ -18,6 +18,7 @@ def get_filename(u):
             filename += '-'
     return filename + '.html'
 
+
 def download(u, p):
     response = requests.get(u)
     f_name = get_filename(u)
