@@ -13,5 +13,3 @@ def test_parser2():
     parsed = parser.parse_args(['-w', 'test', '-o', 'new'])
     assert parsed.output == 'new'
     assert parsed.webpage == 'test'
-
-
