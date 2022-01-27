@@ -2,9 +2,6 @@ from scripts.page_loader import create_parser
 
 
 def test_parser1():
-    '''
-    parser
-    '''
     parser = create_parser()
     parsed = parser.parse_args(['--output', 'test', '--webpage', 'page'])
     assert parsed.output == 'test'

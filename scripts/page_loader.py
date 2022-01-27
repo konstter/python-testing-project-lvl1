@@ -20,6 +20,9 @@ def get_filename(u):
 
 
 def download(u, p):
+    '''
+    Download file to a directory
+    '''
     response = requests.get(u)
     f_name = get_filename(u)
     res_path = os.path.join(p, f_name)
@@ -29,6 +32,9 @@ def download(u, p):
 
 
 def create_parser():
+    '''
+    Start bash parser
+    '''
     parser = argparse.ArgumentParser()
     h1_mes = 'A directory to download a webpage'
     h2_mes = 'A webpage to download'
@@ -38,6 +44,9 @@ def create_parser():
 
 
 def driver():
+    '''
+    Initial with default or user options
+    '''
     args = create_parser().parse_args()
     url = 'https://ru.hexlet.io/courses'
     path = os.getcwd()
