@@ -1,6 +1,6 @@
 # Page loader. A simple project for testing
 
-The package downloads content a specified webppage to a specified directory. It's managed from bash.
+The package downloads content from a specified webpage to a specified directory. It's managed from bash.
 
 ### Tests and linter status:
 [![Actions Status](https://github.com/konstter/python-testing-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/konstter/python-testing-project-lvl1/actions)
@@ -20,7 +20,7 @@ The package downloads content a specified webppage to a specified directory. It'
 # Install. Start from the root directory
 pip install --user dist/*.whl
 
-# It download https://ru.hexlet.io/courses to current directory
+# It downloads https://ru.hexlet.io/courses to current directory
 page-loader
 
 # page-loader [-h] [-o OUTPUT] [-w WEBPAGE]
